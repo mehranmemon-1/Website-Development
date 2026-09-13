@@ -1,0 +1,209 @@
+@font-face {
+    font-family:"BoldPixels";
+    src: url(BoldPixels.ttf);
+}
+
+
+/* ---------- GENERAL ---------- */
+body {
+    margin: 0;
+    font-family: 'Boldpixels', sans-serif;
+    background-color: #f0f14e;
+    color: #000000;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #000000;
+}
+
+a {
+    color: #ed3833;
+}
+
+button {
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background: linear-gradient(90deg, #ff5f85, #1be0d7);
+    padding: 20px;
+    text-align: center;
+}
+
+/* ---------- NAV ---------- */
+nav {
+    background: #f0f14e;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* ---------- HAMBURGER MENU ---------- */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    color: #ff5f85;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul.show {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+        margin: auto;
+    }
+}
+
+
+
+/* ---------- CONTAINER ---------- */
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+.accessibility {
+    background: #f0f14e;
+    padding: 10px;
+    text-align: center;
+}
+
+.accessibility button {
+    background: #ffcc00;
+    margin: 5px;
+}
+/* -------slider images-----*/
+.slider-images{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+width: 100%; 
+
+margin: 0 auto; /* center container */
+slider-images img{ max-height: 120px; /* keeps logos neat*/
+    width:auto;}
+
+.slider{
+    width: 400px;
+    margin: 40px auto;
+    text-align: center;
+
+.slides { overflow:hidden;
+height: 150px;
+position: relative;
+}
+.slide {position:absolute;
+width: 100%
+opacity;0}
+transition: opacity 0.5s ease;
+}
+#slide1:checked ~ .slides .slide:nth-child(1),
+#slide2:checked ~ .slides .slide:nth-child(2),
+#slide3:checked ~ .slide .slide:nth-child(3),
+} 
+/* buttons*/
+.nav label
+ {
+    display:inline-block;
+    padding: 8px 14px;
+    margin: 0 5px
+    border-radius 6px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.nav label:hover {background:#1645f5 
+;
+color:#fff}
+/* ---------- ACCORDION ---------- */
+details {
+    background: #6ded8a;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* ---------- GALLERY ---------- */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ---------- MODAL ---------- */
+.modal {
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.9);
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+.modal img {
+    display: block;
+    max-width: 80%;
+    margin: 10% auto;
+}
+/* float image*/
+.float {
+  float: right;
+  height: 100%;
+  margin-left: 15px;
+  display: flex;
+  align-items: flex-end;
+  shape-outside: inset(calc(100% - 100px) 0 0);
+}
+
+/* ---------- FORM ---------- */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 18px;
+    border-radius: 5px;}
+
+
+
+/* ----footer------*/
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arcade Kingz</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+<header>
+    
+<img src="Logo.png" class="top right fixed" alt="logo" height="220" width="300">
+<div> </div>
+<img src="Banner.png" alt="Banner" height="210" width="500">
+<p>A blast from the past</p>
+</header>
+
+<nav>
+<button class="hamburger" onclick="toggleMenu()">☰</button>
+<ul id="menu">
+<li><a href="about.html">About</a></li>
+<li><a href="explore.html">Explore</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="container">
+<input type="search" placeholder="Search..." onkeyup="searchPage('','content')">
+
+
+<div class="accessibility">
+<button onclick="zoomIn()">A+</button>
+<button onclick="zoomOut()">A-</button>
+<button onclick="highContrast()">High Contrast</button>
+
+
+
+    <div class="slides"
+    div class="slide">
+        <h2> Welcome to Arcade Kingz</h2>
+        <p>Aracade Kingz is a free to use website which aims to bring you free games from the 80s 90s and 2000s giving you a <b> blast from the past experience </b></p>
+        </div>
+        <div class="slide">
+           <h2>what this website offers</h2>
+           <p> This website gives you access to a couple of games from 3 different Platforms allowing you to have a taste of the retro world </p>
+           </div>
+           <div class="slide">
+            <h2> How <i> You</i> can support us</h2>
+            <p> Aracade Kingz wants to bring you the best retro gaming experience. If there are any games you would like to see please fill out the contact for in the contact us page! Keep gaming </p>
+           </div>
+        </div>
+        
+</div>
+<h2> The Platforms we offer</h2>
+<p> check them out in the explore page</p>
+ <div class = "slider-images">
+
+    <div class="imgContainer">
+				<div>
+				<img src="Nintendo.png" onclick="openModal(this.src)" alt="Nintendo Logo" height="200" width="250"> </a>
+            
+				</div>
+         </div>
+			</td>
+      <td>
+    <img src="PS1.png" onclick="openModal(this.src)"  alt="PS1 logo" height="200" width="250"> 
+    
+    <img src="Arcade classics.png" onclick="openModal(this.src)"  alt="Arcade classics logo" height="200" width="250"> 
+
+    
+ </div>
+
+
+<h2> Our Top games of the month rated by our users!</h2>
+<p> check them out in the explore page!</p>
+<div class = "slider-images">
+
+    <div class="imgContainer">
+				<div>
+				<a href="https://archive.org/details/arcade_tetris" target="_blank"><img src="tetris.png" alt="tetris" height="200" width="250">
+               <figcaption> Tetris</figcaption>
+				</div>
+            </div>
+         </td>
+         <td>
+         
+    <a href="https://archive.org/details/arcade_paperboy" target="_blank"><img src="paperboy.png" alt="paperboy" height="200" width="250">
+      <figcaption> Paperboy</figcaption>
+    <a href="https://archive.org/details/arcade_marble" target="_blank"><img src="marble madness.png" alt="marble madness" height="200" width="250">
+      <figcaption> Marble maddness </figcaption>
+ </div>
+</a>
+<footer> Further information <div>
+ <a href="https://www.childnet.com/help-and-advice/online-bullying/" target="_blank"> online bullying support </a>
+</div>
+<a href="https://pegi.info/pegi-code-of-conduct" target="_blank"> Information about game ratings</a>
+</div>
+<a href="https://archive.org/details/internetarcade" target="_blank"> Where to play the games</a>
+</div>
+</footer>
+
+<div id="modal" class="modal" onclick="closeModal()">
+<img id="modalImg">
+</div>
+</body>
+</html>
